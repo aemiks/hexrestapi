@@ -32,7 +32,7 @@ The first thing to do is upload source files or to clone the repository:
 ```sh
 $ mkdir hexrestapi
 $ cd hexrestapi #move here source files or clone git respiratory
-$ git clone https://github.com/.../ 
+$ git clone https://github.com/aemiks/hexrestapi
 ```
 
 Create a virtual environment to install dependencies in and activate it:
