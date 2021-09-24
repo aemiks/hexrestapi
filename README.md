@@ -62,8 +62,8 @@ Create super user(admin):
 (venv)$ python manage.py createsuperuser
 ```
 
-And navigate to `http://127.0.0.1:8000/admin/`, to create users and user plans.
+And navigate to `http://127.0.0.1:8000/admin/`, to create users and user plan.
 
 Users can view their images and upload new ones at `http://127.0.0.1:8000/images/`
 
-User permissions(plans) must be set manually in django-admin, each user automatically has a Basic plan(if created)
+User permissions(plans) are set automatically, there is possibility to make custom in django-admin, each user automatically has a Basic plan(if created)
