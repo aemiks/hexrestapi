@@ -1,0 +1,1 @@
+web: gunicorn hexrestapi.wsgi --log-file -

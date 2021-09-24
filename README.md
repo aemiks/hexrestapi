@@ -44,9 +44,10 @@ $ source venv/bin/activate #for Windows user type "venv/Scripts/activate
 ```
 
 Then install the dependencies:
+(If u want to install project localy use `requirements-dev.txt`)
 
 ```sh
-(venv)$ pip install -r requirements.txt
+(venv)$ pip install -r requirements-dev.txt
 ```
 Note the `(venv)` in front of the prompt. This indicates that this terminal
 session operates in a virtual environment set up by `python venv`.
