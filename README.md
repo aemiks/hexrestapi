@@ -15,7 +15,7 @@ hexrestapi is an application that allows you to upload any image in JPG or PNG f
 - a link to a thumbnail that's 200px in height
 - a link to a thumbnail that's 400px in height
 - a link to the originally uploaded image
-- ability to fetch a link that expires after a number of seconds (user can specify any number between 300 and 30000)
+- ability to fetch a links that expires after a number of seconds (user can specify any number between 300 and 30000)
 
 
 In addition, the API gives the admin the ability to create arbitrary plans with the following things configurable:
@@ -52,9 +52,11 @@ Then install the dependencies:
 Note the `(venv)` in front of the prompt. This indicates that this terminal
 session operates in a virtual environment set up by `python venv`.
 
-Once `pip` has finished downloading the dependencies:
+Once `pip` has finished downloading the dependencies, migrate and runserver:
 ```sh
 (venv)$ cd hexrestapi
+(venv)$ python manage.py makemigrations imagesapp
+(venv)$ python manage.py migrate
 (venv)$ python manage.py runserver
 ```
 Create super user(admin):
@@ -62,8 +64,8 @@ Create super user(admin):
 (venv)$ python manage.py createsuperuser
 ```
 
-And navigate to `http://127.0.0.1:8000/admin/`, to create users and user plan.
+And navigate to `http://127.0.0.1:8000/admin/`, to see django-admin functionality.
 
 Users can view their images and upload new ones at `http://127.0.0.1:8000/images/`
 
-User permissions(plans) are set automatically, there is possibility to make custom in django-admin, each user automatically has a Basic plan(if created)
+User permissions(plans) are set automatically, there is possibility to make custom in django-admin, each user automatically has a Basic plan.
