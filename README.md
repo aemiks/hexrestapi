@@ -3,6 +3,13 @@
 Hi! 
 hexrestapi is an application that allows you to upload any image in JPG or PNG format via HTTP request, which is converted into a thumbnail of a size depending on the user's plan. There are 3 types of plans: Basic, Premium, Enterprise 
 
+## Table of contents
+* [Plans Info](#plans-info)
+* [Live Version](#live-version)
+* [Run Project](#run-project)
+
+## Plans Info
+
 1. users that have "Basic" plan after uploading an image get: 
 - a link to a thumbnail that's 200px in height
 
@@ -23,7 +30,21 @@ In addition, the API gives the admin the ability to create arbitrary plans with 
 - presence of the link to the originally uploaded file
 - ability to generate expiring links
 
+## Live version
 
+Live web version avaiable on https://hex-restapi.herokuapp.com/
+
+To go into django-admin use `../admin`
+
+To log into django-admin:
+* login: admin
+* password: admin
+
+To log as an user:
+* login: basicuser, premiumuser, enterpriseuser
+* password: hexrestapi
+
+Or create new one in django-admin section
 
 ## Run project
 
