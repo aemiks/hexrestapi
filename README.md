@@ -33,6 +33,7 @@ In addition, the API gives the admin the ability to create arbitrary plans with 
 ## Live version
 
 Live web version avaiable on https://hex-restapi.herokuapp.com/
+`note that it's free heroku version(without Cloudinary) so uploaded media files wont work`
 
 To go into django-admin use `../admin`
 
